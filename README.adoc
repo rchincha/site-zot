@@ -1,0 +1,41 @@
+= Cloudflow Default UI
+// Settings:
+:experimental:
+:hide-uri-scheme:
+
+image:https://travis-ci.com/lightbend/antora-ui-lightbend-cloud-theme.svg?branch=master["Build Status", link="https://travis-ci.com/lightbend/antora-ui-lightbend-cloud-theme"]
+
+This project is a customized Antora UI theme that is used for both the Cloudflow static website https://cloudflow.io/[cloudflow.io] and the Cloudflow open source documentation https://cloudflow.io/docs/current/index.html[cloudflow.io/docs/current/index.html].
+
+With this theme you can edit/update the user interface, page templates and certain static content such as navigation, site footers, CSS stylesheets and JavaScript includes. 
+
+This theme builds upon the Antora Default UI as https://docs.antora.org/antora-ui-default/[documentented here].
+
+After setting up the https://docs.antora.org/antora-ui-default/prerequisites/[UI Development Prerequisites], you will be ready to make updates and changes to the Cloudflow theme.
+
+CD into the root directory and run:
+
+`gulp preview` 
+
+Preview the site homepage at: http://localhost:5252
+
+Preview docs at: http://localhost:5252/docs/preview.html
+
+
+*Please note* that the theme contains files in the `src` directory that are rendered on the cloudflow.io website and docs. These files are common frontend ones, such as HTML templating using handlebars `.hbs`, CSS, JavaScript and Images. For example if you need to update the site navigation, the site footer, fix a CSS bug etc, you do so within this `src` directory.
+
+Also *important* to note are the `.adoc` files inside the `preview-src` directory. These files are NOT rendered in the live site, their function is to provide the theme dummy content for the purpose of styling only. 
+
+*Lastly*, until automated you will need to also build a ZIP package of the theme and include it in your PR. Once you are happy with you updates, run the following command `gulp bundle:pack` from within the root directory. This will add a ZIP file to your PR. 
+
+== Fix to issue #21
+
+In the Cloudflow doc repo, we have more than one component. For example, the home page is a non-versioned component. We also plan to split out the developing information so that it can more easily be shared by both the OSS and the commercial doc. Unfortunately, this results in these other components showing up in the version selector at the bottom of the TOC. 
+
+To fix this, I modified the navigation-explore.hbs file as follows:
+
+* On lines 10 and 15, added {{#unless prerelease}}, which are closed on lines 21 and 25.
+* On line 12, I commented out the line that adds the component title, otherwise, the title of the component appears.
+
+In the doc project, components to be "hidden" from the component selector must define prerelease: Beta in their antora.yml file. 
+
