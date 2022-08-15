@@ -1,0 +1,96 @@
+@import "variables";
+@import "mixins";
+@import "colors";
+@import "boxes";
+@import "buttons";
+
+.productContainer {
+  align-items:flex-start;
+  margin: 11.875rem 0 10rem 24rem;
+  z-index: 1;
+
+  display:flex;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.productTitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 120%;
+
+  letter-spacing: 0.01em;
+
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.productTextBlock {
+  width: 47.5rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 164%;
+  text-align: justify;
+
+  letter-spacing: 0.15px;
+
+  color: rgba(79, 79, 79, 0.9);
+}
+
+.howItWorksButton {
+  padding: 16px 32px;
+  background: $secondary;
+  box-shadow: 0px 25px 32px rgba(66, 66, 66, 0.15);
+  border-radius: 40px;
+  border-width: 2px;
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133.4%;
+  color: $primary;
+  border-color: $primary;
+  text-transform: none;
+}
+
+.howItWorksButton:hover {
+  background:none;
+  border-color: $primary;
+  border-width: 2px;
+}
+
+
+.specsLink {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 133.4%;
+  text-transform: none;
+  color: $primary;
+}
+
+.buttonContainer {
+  width: 47.25rem;
+  align-items: center;
+}
+
+.planetContainer {
+  position: relative;
+}
+
+.planetTwo {
+  position: absolute;
+  top: -170px;
+  left: 76px;
+}
+
+.planetThree {
+  position: absolute;
+  top: 716px;
+  right: -504px;
+}
