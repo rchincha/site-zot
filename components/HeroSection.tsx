@@ -11,7 +11,7 @@ const HeroSection = () => {
             <Stack className={styles.heroWrapper} direction='column'>
                 <Header/>
                 <div className={styles.heroImage}>
-                    <ExportedImage src={'images/Hero-zui-preview.png'} height={672} width={806} alt="planet1" />
+                    <ExportedImage src={'images/Hero-zui-preview.png'} height={672} width={806} alt="zui-home" />
                 </div>
 
                 <Stack className={styles.heroInteraction} direction='column'>
@@ -19,7 +19,8 @@ const HeroSection = () => {
                     <Typography className={styles.heroSubtext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet nulla vulputate egestas quam laoreet. Tristique volutpat a suspendisse sagittis. </Typography>
                     <Stack className={styles.buttonContainer} direction='row' spacing={4}>
                         <Button disableRipple disableFocusRipple size='large' variant='contained' className={styles.getStartedButton}>
-                        Get started</Button>
+                            Get started
+                        </Button>
                         <Button disableRipple  disableFocusRipple variant='outlined' className={styles.learnMoreButton}>Learn more</Button>
                     </Stack>
                 </Stack>
