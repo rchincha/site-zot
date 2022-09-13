@@ -11,6 +11,8 @@ $primary: #D83C0E !default;
 $primary-light: lighten($primary, 75%) !default;
 $primary-gradient: linear-gradient(149.91deg, #7a4c75 14.36%, #9a6094 116.3%) !default;
 $secondary: #0F2139 !default;
+$secondary-text-light:#E0E5EB !default;
+$secondary-text-dark:#52637A !default;
 $success: #3772FF !default;
 $info: #C0E0DE !default;
 $warning: #ED6A5A !default;

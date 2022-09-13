@@ -9,7 +9,7 @@ export default function App() {
     <>
       <div className={styles.container}>
         <main className={styles.main}>
-          <Section key={0} index={0} color={"primary-gradient"}>
+          <Section key={0} index={0} color={"secondary"}>
             <HeroSection />
           </Section>
           <Section key={1} index={1} color={"white"}>

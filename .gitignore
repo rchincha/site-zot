@@ -12,7 +12,8 @@
 
 # next.js
 /.next/
-
+#built images
+/public/images/nextImageExportOptimizer
 # production
 /build
 
