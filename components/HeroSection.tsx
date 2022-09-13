@@ -2,11 +2,13 @@ import React from 'react'
 import ExportedImage from 'next-image-export-optimizer'
 import styles from '@/styles/HeroSection.module.scss'
 import { Button, Stack, Typography } from '@mui/material'
+import Header from './Header'
 
 
 const HeroSection = () => {
     return (
         <>
+            <Header/>
             <div className={styles.planetOne}>
                 <ExportedImage src={'images/planet_1.svg'} height={800.85} width={953.3} alt="planet1" />
             </div>

@@ -10,7 +10,6 @@ const Layout = ({ children }) => {
     return (
         <>
             <Meta title={title} />
-            <Header visibleMobileNav={visibleMobileNav} setVisibleMobileNav={setVisibleMobileNav} />
             <div className={styles.container}>
                 <main className={styles.main}>
                     {visibleMobileNav ? <MobileNav setVisibleMobileNav={setVisibleMobileNav} /> : children}
