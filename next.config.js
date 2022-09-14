@@ -1,5 +1,7 @@
+const prefixEnvVar = process.env.NODE_ENV === 'production' && process.env.PREFIX? `/${process.env.PREFIX}`: null;
+
 const repoNameURIPrefix = 
-  process.env.NODE_ENV === 'production' ? '/site-zot' : '';
+  process.env.NODE_ENV === 'production' ? prefixEnvVar??'/site-zot' : '';
 
 module.exports = {
     basePath: repoNameURIPrefix,
@@ -16,6 +18,6 @@ module.exports = {
     },
     env: {
         storePicturesInWEBP: true,
-        generateAndUseBlurImages: true,
+        generateAndUseBlurImages: false,
     },
 };
