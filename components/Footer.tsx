@@ -5,7 +5,6 @@ import styles from '@/styles/Layout.module.scss'
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <Social />
             <Legal />
         </footer>
     )

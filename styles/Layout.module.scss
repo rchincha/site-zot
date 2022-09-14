@@ -23,9 +23,9 @@
 
 .footer {
   width: 100%;
-  min-height: 15rem;
+  min-height: 4.3rem;
   border-top: 1px solid #eaeaea;
-  background: $secondary;
+  background: $white;
   @include flex-column;
   @include xcross-centered;
 
@@ -50,12 +50,12 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 133.4%;
     text-align: center;
 
-    color: $primary;
-
+    color: $primary-text;
+    text-transform: none;
   }
 
   .legalButton:hover {
