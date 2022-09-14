@@ -20,14 +20,14 @@ const HeroSection = () => {
                     <Typography className={styles.heroSubtext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet nulla vulputate egestas quam laoreet. Tristique volutpat a suspendisse sagittis. </Typography>
                     <Stack className={styles.buttonContainer} direction='row' spacing={4}>
                         <Button disableRipple disableFocusRipple size='large' variant='contained' className={styles.getStartedButton}>
-                            <Link href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/install-guides/install-guide-linux.html'>
+                            <a className={styles.buttonLink} href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/install-guides/install-guide-linux.html'>
                             Get started
-                            </Link>
+                            </a>
                         </Button>
                         <Button disableRipple  disableFocusRipple variant='outlined' className={styles.learnMoreButton}>
-                            <Link href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/general/zot-concepts.html'>
+                            <a className={styles.buttonLink} href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/general/zot-concepts.html'>
                             Learn more
-                            </Link>        
+                            </a>        
                         </Button>
                     </Stack>
                 </Stack>
