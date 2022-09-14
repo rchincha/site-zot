@@ -19,15 +19,16 @@ const HeroSection = () => {
                     <Typography className={styles.heroText}>A production-ready vendor-neutral OCI image registry server purely based on OCI standards.</Typography>
                     <Typography className={styles.heroSubtext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet nulla vulputate egestas quam laoreet. Tristique volutpat a suspendisse sagittis. </Typography>
                     <Stack className={styles.buttonContainer} direction='row' spacing={4}>
-                        <Link href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/install-guides/install-guide-linux.html'>
-                            <Button disableRipple disableFocusRipple size='large' variant='contained' className={styles.getStartedButton}>
-                                Get started
-                            </Button>
-                        </Link>
-                        <Link href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/general/zot-concepts.html'>
-                            <Button disableRipple  disableFocusRipple variant='outlined' className={styles.learnMoreButton}>Learn more</Button>
-                        </Link>
-
+                        <Button disableRipple disableFocusRipple size='large' variant='contained' className={styles.getStartedButton}>
+                            <Link href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/install-guides/install-guide-linux.html'>
+                            Get started
+                            </Link>
+                        </Button>
+                        <Button disableRipple  disableFocusRipple variant='outlined' className={styles.learnMoreButton}>
+                            <Link href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/general/zot-concepts.html'>
+                            Learn more
+                            </Link>        
+                        </Button>
                     </Stack>
                 </Stack>
             </Stack>
