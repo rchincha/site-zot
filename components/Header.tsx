@@ -25,18 +25,18 @@ const Header = (props) => {
             </div>
             <div className={styles.inputcontainer}>
                 <Stack className={styles.linksbar} direction="row" spacing={2}>
-                    <Link href='/' ><a className={styles.textLink}>zothub</a></Link>
+                    <Link href='/' ><a className={styles.textLink} target="_blank">zothub</a></Link>
                     <Link href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/toc/zot-toc.html' ><a className={styles.textLink}>docs</a></Link>
                     <Link href='/' ><a className={styles.textLink}>blog</a></Link>
                     <Divider orientation="vertical" flexItem sx={{ borderRightWidth: 3, borderColor:'white' }} />
                     <Link href='https://github.com/project-zot/zot'>
-                        <a><ExportedImage src={'images/github-white.svg'} alt="Github Logo" width={24} height={24} /></a>
+                        <a target="_blank"><ExportedImage src={'images/github-white.svg'} alt="Github Logo" width={24} height={24} /></a>
                     </Link>
                     <Link href='https://twitter.com/zotproject'>
-                        <a><ExportedImage src={'images/twitter_new.svg'} alt="Twitter Logo" width={30} height={24} /></a>
+                        <a target="_blank"><ExportedImage src={'images/twitter_new.svg'} alt="Twitter Logo" width={30} height={24} /></a>
                     </Link>
                     <Link href='https://slack.com/'>
-                        <a><ExportedImage src={'images/slack.svg'} alt="Slack Logo" width={24} height={24} /></a>
+                        <a target="_blank"><ExportedImage src={'images/slack.svg'} alt="Slack Logo" width={24} height={24} /></a>
                     </Link>
                 </Stack>
             </div>

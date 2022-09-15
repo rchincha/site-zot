@@ -101,6 +101,10 @@
         .textLink:hover {
             color:$white;
         }
+
+        .textLink:visited {
+            color:$white;
+        }
     }
     .searchicon {
         color: $primary;

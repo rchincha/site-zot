@@ -17,7 +17,6 @@ const HeroSection = () => {
 
                 <Stack className={styles.heroInteraction} direction='column'>
                     <Typography className={styles.heroText}>A production-ready vendor-neutral OCI image registry server purely based on OCI standards.</Typography>
-                    <Typography className={styles.heroSubtext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet nulla vulputate egestas quam laoreet. Tristique volutpat a suspendisse sagittis. </Typography>
                     <Stack className={styles.buttonContainer} direction='row' spacing={4}>
                         <Button disableRipple disableFocusRipple size='large' variant='contained' className={styles.getStartedButton}>
                             <a className={styles.buttonLink} href='http://zotregistry.io/docs-zot/zot-docs-1/1.0/install-guides/install-guide-linux.html'>
